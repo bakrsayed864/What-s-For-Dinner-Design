@@ -96,7 +96,7 @@ header nav ul li a i:hover {
 }
 
 .recipies-section .container .row .col-lg-7 {
-  height: 100vh;
+  max-height: 100vh;
 }
 
 .rating-div {
