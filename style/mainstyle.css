@@ -1,0 +1,249 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Exo', sans-serif;
+  position: relative;
+  background-color: #FFF9ED;
+
+  --primary-color: #FF6900;
+  --scroll-bar-color-hover: rgb(180, 102, 83);
+  --scroll-bar-color: #fe886a4d;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+span,
+a {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+
+/*navbar*/
+header nav .d-flex .content h2 {
+  font-size: 1.7rem;
+  line-height: 2rem;
+  font-weight: bold;
+  color: #101828;
+}
+
+header nav .d-flex .content p {
+  font-size: .9rem;
+  line-height: 1.3rem;
+  color: #6a7282;
+}
+
+header nav ul li a i {
+  font-size: 1.3rem;
+  color: #6a7282;
+  margin-right: .5rem;
+}
+
+header nav ul li a span {
+  height: 40px;
+  width: 40px;
+  border: .1rem solid #FFB86A;
+}
+
+header nav ul li a i:hover {
+  color: var(--primary-color);
+}
+
+/*main section*/
+.alert {
+  border-color: #FB313A !important;
+  background-color: #FEF2F2;
+}
+
+.alert .content h5 {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: #9f0712;
+}
+
+.alert .content p {
+  color: #e7000b;
+  font-size: .9rem;
+  line-height: 1.4rem;
+}
+
+.rating-div i {
+  color: #FDC700;
+}
+
+.recipies-section .container .row .col-lg-7 {
+  height: 100vh;
+}
+
+.rating-div {
+  top: 15px;
+  left: 15px;
+}
+
+.info-div {
+  width: 92%;
+  bottom: 1rem;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+/*nav and tabs section*/
+.nav-tabs .nav-link {
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #747373 !important;
+  border: none;
+  background: transparent;
+  position: relative;
+}
+
+.nav-tabs .nav-link:hover {
+  color: #364153 !important;
+}
+
+.nav-link {
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.nav-tabs .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 0%;
+  height: 1.5px;
+  background-color: var(--primary-color);
+}
+
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-tabs .nav-link.active {
+  color: var(--primary-color) !important;
+}
+
+
+.nav-tabs .nav-link {
+  border: none;
+  font-weight: 600;
+  line-height: 1.6rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+.tab-pane {
+  height: 350px;
+}
+
+.overflow-auto::-webkit-scrollbar {
+  width: 6px;
+     margin-right: 10px
+}
+
+.overflow-auto::-webkit-scrollbar-track {
+  background: white;
+  width: 50px;
+}
+
+
+.overflow-auto::-webkit-scrollbar-thumb {
+  background: var(--scroll-bar-color);
+  border-radius: 10px;
+
+}
+
+.overflow-auto::-webkit-scrollbar-thumb:hover {
+  background: var(--scroll-bar-color-hover);
+}
+
+.tab-content .ingredients .ingredients-body {
+  background-color: #FFFAEC;
+
+}
+
+.tab-content .ingredients .ingredients-body ul li div {
+  background-color: var(--primary-color);
+  width: 20px;
+  height: 20px;
+  padding: 12px;
+  font-size: 13px;
+}
+
+.tab-content .ingredients .ingredients-body ul li span {
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+}
+
+/*instructions*/
+.tab-content .instructions .instructions-body ul li div {
+  background-color: var(--primary-color);
+  width: 50px;
+  height: 50px;
+  padding: 12px;
+  font-size: 24px;
+
+}
+
+.tab-content .instructions .instructions-body ul li span {
+  font-size: 16px;
+  line-height: 24px;
+  color: #364153;
+}
+
+/*chif's tips*/
+.tab-content .tips .tips-body ul li div {
+  background-color: #FFFBEB;
+  color: #364153;
+  border-color: #FFB900 !important;
+}
+
+.tab-content .tips .tips-body ul li div i {
+  background-color: #E17100;
+  font-size: .9rem;
+}
+
+
+.tab-content .nutrition .nutrition-body .col-6 .inner>span {
+  color: #101828;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+button {
+  background: linear-gradient(90deg, var(--primary-color), #E70008);
+  transition: all .4s
+}
+
+button:hover {
+  transform: scale(1.06);
+  background: linear-gradient(90deg, #F44700, #E80008);
+}
