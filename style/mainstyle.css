@@ -4,7 +4,6 @@ body {
   font-family: 'Exo', sans-serif;
   position: relative;
   background-color: #FFF9ED;
-
   --primary-color: #FF6900;
   --scroll-bar-color-hover: rgb(180, 102, 83);
   --scroll-bar-color: #fe886a4d;
@@ -159,7 +158,7 @@ header nav ul li a i:hover {
 }
 
 .tab-pane {
-  height: 350px;
+  max-height: 350px;
 }
 
 .overflow-auto::-webkit-scrollbar {

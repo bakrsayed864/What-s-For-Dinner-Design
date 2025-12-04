@@ -5,60 +5,10 @@
 
 /* md */
 @media (min-width: 768px) {
-
-  .fixed-menu {
-    display: none;
-  }
-
-  main {
-    padding: 1.5rem;
-  }
-
-  main .container-fluid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 1.2rem;
-  grid-template-areas:
-    "main-section main-section main-section main-section main-section main-section"
-    "current-balance current-balance current-balance current-balance current-balance current-balance"
-    "income income income income income income"
-    "expences expences expences expences expences expences"
-    "new-activities new-activities new-activities new-activities new-activities new-activities"
-    "last-deals last-deals last-deals last-deals last-deals last-deals"
-    "monthly-bill monthly-bill monthly-bill monthly-bill monthly-bill monthly-bill"
-    "overview overview overview overview overview overview"
-    "income-expences income-expences income-expences income-expences income-expences income-expences"
-    "payment-ways payment-ways payment-ways payment-ways payment-ways payment-ways"
-    "account-smmary account-smmary account-smmary account-smmary account-smmary account-smmary"
-  ;
-  
-}
 }
 
 /* lg */
 @media (min-width: 1024px) {
-  .fixed-menu {
-    display: block;
-  }
-
-  main {
-    padding: 1.5rem 17rem 1.5rem 1.5rem;
-  }
-
-  main .container-fluid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 1.2rem;
-  grid-template-areas:
-    "main-section main-section main-section main-section main-section main-section"
-    "current-balance current-balance income income expences expences"
-    "new-activities new-activities last-deals last-deals last-deals last-deals"
-    "monthly-bill monthly-bill last-deals last-deals last-deals last-deals"
-    "overview overview income-expences income-expences payment-ways payment-ways"
-    "overview overview account-smmary account-smmary payment-ways payment-ways"
-  ;
-  
-}
 }
 
 /* xl */
